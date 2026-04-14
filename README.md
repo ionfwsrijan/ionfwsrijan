@@ -111,7 +111,6 @@ I'm a **Generative AI Engineer** and **B.Tech AI student** passionate about buil
 <div align="center">
 
 ![Srijan's GitHub Stats](https://github-readme-stats-fast.vercel.app/api?username=ionfwsrijan&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Languages](https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ionfwsrijan&layout=compact&theme=tokyonight&hide_border=true)
 
 ![GitHub Streak](https://github-readme-streak-stats-eight.vercel.app?user=ionfwsrijan&theme=tokyonight&hide_border=true)
 
