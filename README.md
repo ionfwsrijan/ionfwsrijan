@@ -8,7 +8,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
 [![Email](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jaiswalsrijan505@gmail.com)
 
-*B.Tech AI @ SRM Institute of Science and Technology, Chennai · GPA: 8.8/10*
+*B.Tech AI @ SRM Institute of Science and Technology, Chennai*
 
 </div>
 
