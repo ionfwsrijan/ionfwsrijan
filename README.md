@@ -55,13 +55,12 @@ I'm a **Generative AI Engineer** and **B.Tech AI student** passionate about buil
 
 ## 🚀 Featured Projects
 
-### 🛡️ PatchPilot — AI Security Scanning & Remediation System
-> End-to-end AI-powered DevSecOps platform for codebase vulnerability detection and auto-remediation.
+### 📉 ML Customer Churn Prediction System
+> Predict which customers are about to leave — before they do.
 
-- Scans GitHub repos / ZIP codebases using **Semgrep (SAST)**, **OSV-Scanner**, and **Gitleaks**
-- Automated remediation suggestions in a sandboxed environment
-- Generates downloadable **compliance evidence packs** for audits
-- Built with **React + Vite + Tailwind** frontend and Python backend pipeline
+- End-to-end ML pipeline with **Logistic Regression, Random Forest, XGBoost**
+- Full EDA, feature engineering, and model evaluation (F1, precision, recall)
+- Industry-relevant use case (Netflix, telecom, SaaS platforms)
 
 ---
 
@@ -84,12 +83,13 @@ I'm a **Generative AI Engineer** and **B.Tech AI student** passionate about buil
 
 ---
 
-### 📉 ML Customer Churn Prediction System
-> Predict which customers are about to leave — before they do.
+### 🛡️ PatchPilot — AI Security Scanning & Remediation System
+> End-to-end AI-powered DevSecOps platform for codebase vulnerability detection and auto-remediation.
 
-- End-to-end ML pipeline with **Logistic Regression, Random Forest, XGBoost**
-- Full EDA, feature engineering, and model evaluation (F1, precision, recall)
-- Industry-relevant use case (Netflix, telecom, SaaS platforms)
+- Scans GitHub repos / ZIP codebases using **Semgrep (SAST)**, **OSV-Scanner**, and **Gitleaks**
+- Automated remediation suggestions in a sandboxed environment
+- Generates downloadable **compliance evidence packs** for audits
+- Built with **React + Vite + Tailwind** frontend and Python backend pipeline
 
 ---
 
@@ -110,8 +110,10 @@ I'm a **Generative AI Engineer** and **B.Tech AI student** passionate about buil
 
 <div align="center">
 
-![Srijan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=ionfwsrijan&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ionfwsrijan&layout=compact&theme=tokyonight&hide_border=true)
+![Srijan's GitHub Stats](https://github-readme-stats-fast.vercel.app/api?username=ionfwsrijan&show_icons=true&theme=tokyonight&hide_border=true)
+![Top Languages](https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ionfwsrijan&layout=compact&theme=tokyonight&hide_border=true)
+
+![GitHub Streak](https://github-readme-streak-stats-eight.vercel.app?user=ionfwsrijan&theme=tokyonight&hide_border=true)
 
 </div>
 
