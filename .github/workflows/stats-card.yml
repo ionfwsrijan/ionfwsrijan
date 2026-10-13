@@ -1,0 +1,50 @@
+name: Update stats card
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:       
+  push:
+    paths:
+      - "scripts/generate_stats_card.py"
+      - ".github/workflows/stats-card.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats-card
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate card
+        env:
+          # Optional: add a PAT as repo secret STATS_TOKEN (scopes: read:user, repo)
+          # to include private contributions. Falls back to the built-in token.
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ionfwsrijan
+          CARD_TITLE: "Srijan's Stats"
+          OUT_PATH: assets/stats-card.svg
+          INCLUDE_PRIVATE: "true"
+        run: python scripts/generate_stats_card.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats-card.svg
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "chore: update stats card"
+            git push
+          fi
