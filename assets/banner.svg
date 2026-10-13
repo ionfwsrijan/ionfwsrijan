@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 290" width="900" height="290" role="img" aria-label="Srijan Jaiswal: Generative AI, Applied ML, Security Engineering">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0f14"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#1f2937" stroke-width="1"/>
+    </pattern>
+    <style>
+      .sans { font-family: Inter, "Segoe UI", Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+      .name { font-size: 46px; font-weight: 700; fill: #f3f4f6; letter-spacing: 3px; }
+      .sub  { font-size: 14px; fill: #9ca3af; letter-spacing: 3px; }
+      .p    { font-size: 14px; fill: #22d3ee; }
+      .t    { font-size: 14px; fill: #e5e7eb; }
+      .o    { font-size: 14px; fill: #9ca3af; }
+      .cursor { animation: blink 1.1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+    </style>
+  </defs>
+
+  <rect width="900" height="290" rx="12" fill="url(#bg)"/>
+  <rect width="900" height="290" rx="12" fill="url(#grid)" opacity="0.45"/>
+  <rect x="0.5" y="0.5" width="899" height="289" rx="12" fill="none" stroke="#1f2937"/>
+
+  <circle cx="30" cy="28" r="5" fill="#374151"/>
+  <circle cx="50" cy="28" r="5" fill="#374151"/>
+  <circle cx="70" cy="28" r="5" fill="#374151"/>
+
+  <text x="60" y="100" class="sans name">SRIJAN JAISWAL</text>
+  <rect x="60" y="114" width="140" height="3" rx="1.5" fill="url(#accent)"/>
+  <text x="60" y="144" class="mono sub">GENERATIVE AI  ·  APPLIED ML  ·  SECURITY ENGINEERING</text>
+
+  <text x="60" y="190" class="mono"><tspan class="p">~ $ </tspan><tspan class="t">whoami</tspan></text>
+  <text x="60" y="210" class="mono o">  srijan jaiswal. builds LLM systems, ML pipelines and security tooling.</text>
+  <text x="60" y="238" class="mono"><tspan class="p">~ $ </tspan><tspan class="t">now</tspan></text>
+  <text x="60" y="258" class="mono o" textLength="487" lengthAdjust="spacing">  Research Intern, AI/ML @ Samsung R&amp;D Institute Bangalore</text>
+  <rect class="cursor" x="554" y="246" width="8" height="15" fill="#22d3ee"/>
+</svg>
