@@ -187,15 +187,7 @@ flowchart LR
 
 ## Activity
 
-<div align="center">
-
-[![Followers](https://img.shields.io/github/followers/ionfwsrijan?style=flat-square&labelColor=111827&color=2563eb)](https://github.com/ionfwsrijan?tab=followers)
-[![PatchPilot stars](https://img.shields.io/github/stars/ionfwsrijan/PatchPilot?style=flat-square&labelColor=111827&color=2563eb&label=PatchPilot%20stars)](https://github.com/ionfwsrijan/PatchPilot/stargazers)
-[![PatchPilot forks](https://img.shields.io/github/forks/ionfwsrijan/PatchPilot?style=flat-square&labelColor=111827&color=2563eb&label=PatchPilot%20forks)](https://github.com/ionfwsrijan/PatchPilot/forks)
-[![PatchPilot commits](https://img.shields.io/github/commit-activity/y/ionfwsrijan/PatchPilot?style=flat-square&labelColor=111827&color=2563eb&label=PatchPilot%20commits%2Fyr)](https://github.com/ionfwsrijan/PatchPilot/commits/main)
-[![Skewline last commit](https://img.shields.io/github/last-commit/ionfwsrijan/Skewline?style=flat-square&labelColor=111827&color=2563eb&label=Skewline%20last%20commit)](https://github.com/ionfwsrijan/Skewline/commits/main)
-
-</div>
+<div align="center"> <img src="https://github-statspro.vercel.app/api/streak/ionfwsrijan?theme=dark" alt="GitHub streak" width="49%"> <img src="https://github-statspro.vercel.app/api/stats/ionfwsrijan?theme=dark" alt="GitHub stats" width="49%"> <img src="https://github-statspro.vercel.app/api/activity/ionfwsrijan?theme=dark" alt="Contribution activity, last 365 days" width="98%"> </div>
 
 ---
 
