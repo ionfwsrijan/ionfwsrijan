@@ -1,22 +1,16 @@
 <div align="center">
 
-# Srijan Jaiswal
+<img src="assets/banner.svg" alt="Srijan Jaiswal: Generative AI, Applied ML, Security Engineering" width="100%">
 
-**Generative AI · Applied ML · Security Engineering**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-srijancodes-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=111827)](https://linkedin.com/in/srijancodes)
+[![Portfolio](https://img.shields.io/badge/Website-srijanbuilds.dev-2563eb?style=flat-square&logo=googlechrome&logoColor=white&labelColor=111827)](https://srijanbuilds.dev/)
+[![Email](https://img.shields.io/badge/Email-jaiswalsrijan505-EA4335?style=flat-square&logo=gmail&logoColor=white&labelColor=111827)](mailto:jaiswalsrijan505@gmail.com)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/srijancodes)
-[![Website](https://img.shields.io/badge/Website-111827?style=flat-square&logo=googlechrome&logoColor=white)](https://srijanbuilds.dev/)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:jaiswalsrijan505@gmail.com)
+![Samsung R&D](https://img.shields.io/badge/Samsung%20R%26D%20Bangalore-Research%20Intern-2563eb?style=flat-square&labelColor=111827)
+![GSSoC](https://img.shields.io/badge/GSSoC-%231%20Contributor-2563eb?style=flat-square&labelColor=111827)
+![SSoC](https://img.shields.io/badge/SSoC-Project%20Admin-2563eb?style=flat-square&labelColor=111827)
 
 </div>
-
-```text
-~ $ whoami
-srijan jaiswal. builds LLM systems, ML pipelines and security tooling.
-
-~ $ now
-Research Intern, AI/ML @ Samsung R&D Institute Bangalore
-```
 
 ---
 
@@ -24,54 +18,133 @@ Research Intern, AI/ML @ Samsung R&D Institute Bangalore
 
 I build AI systems that hold up outside a notebook: retrieval pipelines that cite their sources, models that explain their predictions, and scanners that find what is broken and propose the fix. Most of my work sits where machine learning meets security and infrastructure.
 
-At Samsung R&D Institute Bangalore I work on applied ML and Generative AI research with senior research engineers, covering model development, experimentation and evaluation across deep learning, NLP and LLM-based systems.
+At Samsung R&D Institute Bangalore I work on applied ML and Generative AI research alongside senior research engineers, covering model development, experimentation and evaluation across deep learning, NLP and LLM-based systems.
 
-Outside of work I contribute to open source. I ranked #1 overall among contributors at GirlScript Summer of Code, served as a project admin at Social Summer of Code (mentoring contributors, reviewing PRs and triaging issues), and authored LangChain integration examples and RAG utilities used by 20+ developers.
+**Open source**
+
+- Ranked #1 overall among contributors at GirlScript Summer of Code
+- Project Admin at Social Summer of Code: mentoring contributors, reviewing PRs, triaging issues
+- Authored LangChain integration examples and RAG utilities used by 20+ developers
 
 ---
 
 ## Selected Work
 
 ### [PatchPilot](https://github.com/ionfwsrijan/PatchPilot)
-Automated code security triage: scan, fix, verify and export compliance evidence, all running locally.
 
-- Runs Semgrep (SAST), OSV-Scanner (dependencies) and Gitleaks (secrets) in parallel against a ZIP or GitHub repo
-- Cut manual review time by about 60% across codebases of 500+ files
-- LLM-assisted remediation with inference latency under 150ms, followed by a verification pass and a downloadable evidence pack
+*Automated code security triage: scan, fix, verify and export compliance evidence. Runs entirely locally.*
+
+```mermaid
+flowchart LR
+    A["Repo or ZIP"] --> B["Semgrep · OSV-Scanner · Gitleaks"]
+    B --> C["Triage and ranking"]
+    C --> D["Proposed fixes"]
+    D --> E["Verify"]
+    E --> F["Evidence pack"]
+```
+
+![Review time](https://img.shields.io/badge/review%20time-~60%25%20less-2563eb?style=flat-square&labelColor=111827)
+![Scale](https://img.shields.io/badge/scanned-500%2B%20files-2563eb?style=flat-square&labelColor=111827)
+![Latency](https://img.shields.io/badge/inference-%3C150%20ms-2563eb?style=flat-square&labelColor=111827)
+
+<details>
+<summary>Under the hood</summary>
+
+- Runs SAST, dependency and secret scanners in parallel against a ZIP upload or a GitHub repo
+- LLM-assisted remediation with sub-150ms inference, followed by a verification pass that re-runs the checks
 - ML layer for severity ranking, finding deduplication, false-positive filtering and fix-success prediction; local LLM patch generation via Ollama
+- Exports a compliance evidence pack with audit artifacts and diffs
 - Open source, with outside contributors
 
 `Python` `FastAPI` `React` `Vite` `Tailwind` `Docker` `Semgrep` `OSV-Scanner` `Gitleaks`
 
-### [Skewline](https://github.com/ionfwsrijan/Skewline)
-Research-grade limit-order-book simulator for benchmarking market making strategies under realistic microstructure constraints.
+</details>
 
-- Benchmarks 7 quoting strategies (Avellaneda-Stoikov, GLFT, flow imbalance, tabular RL, DQN and multi-asset hedging) under stochastic latency, adverse selection and partial fills
+### [Skewline](https://github.com/ionfwsrijan/Skewline)
+
+*Research-grade limit-order-book simulator for benchmarking market making strategies under realistic microstructure constraints.*
+
+```mermaid
+flowchart LR
+    A["Price process"] --> B["Order flow"]
+    B --> C["Latency queue"]
+    C --> D["Limit order book"]
+    D --> E["Agent quotes"]
+    E --> F["Risk manager"]
+    D --> G["Metrics and live dashboard"]
+```
+
+![Strategies](https://img.shields.io/badge/strategies-7-2563eb?style=flat-square&labelColor=111827)
+![Tests](https://img.shields.io/badge/tests-28%2B-2563eb?style=flat-square&labelColor=111827)
+![Validation](https://img.shields.io/badge/validated%20on-real%20Binance%20trades-2563eb?style=flat-square&labelColor=111827)
+
+<details>
+<summary>Under the hood</summary>
+
+- Benchmarks Avellaneda-Stoikov, GLFT, flow imbalance, tabular RL, DQN and multi-asset hedging under stochastic latency, adverse selection and partial fills
 - Full-stack FastAPI and React dashboard with real-time WebSocket streaming
-- Validated against real Binance BTC, ETH and SOL trade data using KS-test distribution comparison
+- Backtested against real Binance BTC, ETH and SOL trade data using KS-test distribution comparison
 - 28+ automated tests, CI and Docker deployment
 
 `Python` `FastAPI` `React` `NumPy` `WebSocket` `Docker`
 
+</details>
+
 ### [Driftmark](https://github.com/ionfwsrijan/Driftmark)
-End-to-end churn prediction with explanations and monitoring built in.
+
+*End-to-end churn prediction with explanations and monitoring built in.*
+
+```mermaid
+flowchart LR
+    A["Raw data"] --> B["Snapshots and 30-day churn labels"]
+    B --> C["Tabular · NLP · Sequence models"]
+    C --> D["Calibrated stacker"]
+    D --> E["Reason codes and campaign export"]
+    E --> F["FastAPI and drift report"]
+```
+
+![Accuracy](https://img.shields.io/badge/accuracy-85%25-2563eb?style=flat-square&labelColor=111827)
+![F1](https://img.shields.io/badge/F1-0.78-2563eb?style=flat-square&labelColor=111827)
+![Records](https://img.shields.io/badge/records-10K%2B-2563eb?style=flat-square&labelColor=111827)
+
+<details>
+<summary>Under the hood</summary>
 
 - Tabular (LightGBM), NLP and sequence models ensembled into a time-aware, calibrated stacker
-- 85% accuracy (F1 0.78) across 10K+ customer records
 - SHAP-based reason codes and automated CRM campaign exports
 - FastAPI batch-scoring API with PSI-based drift monitoring
 
 `Python` `LightGBM` `XGBoost` `SHAP` `FastAPI` `Poetry`
 
-### [Lexivault](https://github.com/ionfwsrijan/Lexivault)
-RAG-based document Q&A with citations, built to be measured.
+</details>
 
-- 0.909 mean answer relevance on an evaluation set (90%+)
-- ChromaDB vector store, MMR retrieval and cross-encoder reranking
-- Ingests PDF, DOCX, TXT, Markdown and URLs; streams answers over SSE with chunk-level citations
-- Feedback loop, drift monitoring, evaluation and benchmark scripts; Docker and GitHub Actions CI/CD
+### [Lexivault](https://github.com/ionfwsrijan/Lexivault)
+
+*RAG-based document Q&A with citations, built to be measured.*
+
+```mermaid
+flowchart LR
+    A["Ingest PDF · DOCX · TXT · MD · URL"] --> B["Chunk and embed"]
+    B --> C[("ChromaDB")]
+    C --> D["MMR retrieval and rerank"]
+    D --> E["LLM answer"]
+    E --> F["Citations and streaming"]
+```
+
+![Relevance](https://img.shields.io/badge/relevance-0.909%20mean-2563eb?style=flat-square&labelColor=111827)
+![Retrieval](https://img.shields.io/badge/retrieval-MMR%20%2B%20cross--encoder-2563eb?style=flat-square&labelColor=111827)
+
+<details>
+<summary>Under the hood</summary>
+
+- 90%+ answer relevance on an evaluation set
+- Multi-format ingestion, SSE streaming and chunk-level citations
+- Feedback loop, drift monitoring, evaluation and benchmark scripts
+- CI/CD with Docker and GitHub Actions
 
 `Python` `LangChain` `ChromaDB` `FastAPI` `OpenAI` `Docker` `GitHub Actions`
+
+</details>
 
 ---
 
@@ -116,12 +189,11 @@ RAG-based document Q&A with citations, built to be measured.
 
 <div align="center">
 
-<a href="https://github.com/ionfwsrijan">
-  <img height="170" alt="GitHub stats" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ionfwsrijan&theme=github_dark" />
-</a>
-<a href="https://github.com/ionfwsrijan">
-  <img height="170" alt="Most used languages in commits" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ionfwsrijan&theme=github_dark" />
-</a>
+[![Followers](https://img.shields.io/github/followers/ionfwsrijan?style=flat-square&labelColor=111827&color=2563eb)](https://github.com/ionfwsrijan?tab=followers)
+[![PatchPilot stars](https://img.shields.io/github/stars/ionfwsrijan/PatchPilot?style=flat-square&labelColor=111827&color=2563eb&label=PatchPilot%20stars)](https://github.com/ionfwsrijan/PatchPilot/stargazers)
+[![PatchPilot forks](https://img.shields.io/github/forks/ionfwsrijan/PatchPilot?style=flat-square&labelColor=111827&color=2563eb&label=PatchPilot%20forks)](https://github.com/ionfwsrijan/PatchPilot/forks)
+[![PatchPilot commits](https://img.shields.io/github/commit-activity/y/ionfwsrijan/PatchPilot?style=flat-square&labelColor=111827&color=2563eb&label=PatchPilot%20commits%2Fyr)](https://github.com/ionfwsrijan/PatchPilot/commits/main)
+[![Skewline last commit](https://img.shields.io/github/last-commit/ionfwsrijan/Skewline?style=flat-square&labelColor=111827&color=2563eb&label=Skewline%20last%20commit)](https://github.com/ionfwsrijan/Skewline/commits/main)
 
 </div>
 
