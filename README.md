@@ -188,7 +188,7 @@ flowchart LR
 ## Activity
 
 <p align="center">
-  <img src="https://github-statspro.vercel.app/api/stats/ionfwsrijan?theme=dark&design=compact" alt="Srijan's GitHub stats" />
+  <img src="assets/stats-card.svg" alt="Srijan's GitHub stats" width="730" />
 </p>
 
 ---
