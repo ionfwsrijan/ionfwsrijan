@@ -187,7 +187,9 @@ flowchart LR
 
 ## Activity
 
-<div align="center"> <img src="https://github-statspro.vercel.app/api/stats/ionfwsrijan?theme=dark&design=compact" alt="Contribution activity" width="98%"> </div>
+<p align="center">
+  <img src="https://github-statspro.vercel.app/api/stats/ionfwsrijan?theme=dark&design=compact" alt="Srijan's GitHub stats" />
+</p>
 
 ---
 
